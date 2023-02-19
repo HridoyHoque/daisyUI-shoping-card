@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="garden">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Shoping Card USing DeisyUI</title>
+</head>
+
+<body>
+    <header>
+        <div class="navbar bg-base-100 shadow-2xl lg:px-12">
+            <div class="flex-1">
+                <a class="btn btn-ghost normal-case text-xl">Hridoy</a>
+            </div>
+            <div class="flex-none gap-2">
+                <div class="form-control">
+                    <input type="text" placeholder="Search" class="input input-bordered" />
+                </div>
+                <div class="dropdown dropdown-end">
+                    <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+                        <div class="w-10 rounded-full">
+                            <img src="./img/dp.jpg" />
+                        </div>
+                    </label>
+                    <ul tabindex="0"
+                        class="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52">
+                        <li>
+                            <a class="justify-between">
+                                Profile
+                                <span class="badge">New</span>
+                            </a>
+                        </li>
+                        <li><a>Settings</a></li>
+                        <li><a>Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="lg:px-12">
+            <div class="card-details mt-5 w-[75%] grid md:grid-cols-2 lg:grid-cols-3 gap-4 ">
+
+                <!-- Card 1 Coffee JS -->
+
+                <div class="card card-compact w-full bg-base-100 shadow-xl">
+                    <figure><img class="w-full h-40" src="./img/coffee.jpg" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Coffe JS</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur, facere.</p>
+                        <p>price: $<span>110</span></p>
+                        <p>Quantity: <span>5</span></p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary">Add to Card</button>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Card 2 Panda JS -->
+
+                <div class="card card-compact w-full bg-base-100 shadow-xl">
+                    <figure><img class="w-full h-40" src="./img/panda.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Panda JS</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur, facere.</p>
+                        <p>price: $<span>210</span></p>
+                        <p>Quantity: <span>5</span></p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary">Add to Card</button>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Card 3  Umbrella JS -->    
+                <div class="card card-compact w-full bg-base-100 shadow-xl">
+                    <figure><img class="w-full h-40" src="./img/umbrella.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Umbrella JS</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur, facere.</p>
+                        <p>price: $<span>210</span></p>
+                        <p>Quantity: <span>5</span></p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary">Add to Card</button>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Card 4 Heart JS -->    
+                <div class="card card-compact w-full bg-base-100 shadow-xl">
+                    <figure><img class="w-full h-40" src="./img/heart_js.jpg" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Heart JS</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur, facere.</p>
+                        <p>price: $<span>510</span></p>
+                        <p>Quantity: <span>5</span></p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary">Add to Card</button>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Card 5 Vue JS -->    
+                <div class="card card-compact w-full bg-base-100 shadow-xl">
+                    <figure><img class="w-full h-40" src="./img/vue-js.jpg" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Vue JS</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur, facere.</p>
+                       <!--  <p>price: $<span>510</span></p>
+                        <p>Quantity: <span>5</span></p> -->
+                        <input type="text" placeholder="price" class="input input-bordered input-sm w-full max-w-xs" />
+                        <input type="text" placeholder="Quantity" class="input input-bordered input-sm w-full max-w-xs" />
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary">Add to Card</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-details"></div>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>
