@@ -43,7 +43,7 @@
         </div>
     </header>
     <main>
-        <section class="lg:px-12">
+        <section class="lg:px-12 flex flex-col md:flex-row lg:flex-row">
             <div class="card-details mt-5 w-[75%] grid md:grid-cols-2 lg:grid-cols-3 gap-4 ">
 
                 <!-- Card 1 Coffee JS -->
@@ -51,12 +51,12 @@
                 <div class="card card-compact w-full bg-base-100 shadow-xl">
                     <figure><img class="w-full h-40" src="./img/coffee.jpg" alt="Shoes" /></figure>
                     <div class="card-body">
-                        <h2 class="card-title">Coffe JS</h2>
+                        <h2 class="card-title" id="First-card-name">Coffe JS</h2>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur, facere.</p>
-                        <p>price: $<span>110</span></p>
-                        <p>Quantity: <span>5</span></p>
+                        <p>price: $<span id="First-card-price">110</span></p>
+                        <p>Quantity: <span id="First-card-quantity">5</span></p>
                         <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Add to Card</button>
+                            <button id="btn-first" class="btn btn-primary">Add to Card</button>
                         </div>
                     </div>
                 </div>
@@ -118,7 +118,36 @@
                     </div>
                 </div>
             </div>
-            <div class="card-details"></div>
+            <div class="card-details text-center font-bold w-full md:w-[25%] lg:w-[25%] ml-4 underline mt-5">
+                <h1>
+                    ToTal Products: <span>0</span>
+                </h1>
+                <div class="overflow-x-auto">
+                    <table class="table w-full">
+                      <!-- head -->
+                      <thead>
+                        <tr>
+                          <th>NO</th>
+                          <th>Name</th>
+                          <th>PRICE</th>
+                          <th>QUANTITY</th>
+                          <th>Total</th>
+                         
+                        </tr>
+                      </thead>
+                      <tbody id="table-container">
+                       <!--  row 1
+                        <tr>
+                          <th>1</th>
+                          <td>Cy Ganderton</td>
+                          <td>Quality Control Specialist</td>
+                          <td>Blue</td>
+                        </tr> -->
+                        
+                      </tbody>
+                    </table>
+                  </div>
+            </div>
         </section>
     </main>
     <script src="index.js"></script>
